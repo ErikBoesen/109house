@@ -125,11 +125,17 @@ img {
     transform: scale(20);
     transition: 5s ease-in;
 }
+
+.people {
+    width: 300px;
+}
+.people img {
+}
 @keyframes seize {
     0% {
         transform: rotate(0deg);
     }
-    20% {
+    7% {
         filter: hue-rotate(0deg);
     }
     100% {
