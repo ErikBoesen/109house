@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: 'Comic Sans MS', sans-serif;
+    background: #22aaee;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: transparent;
+    z-index: -5;
+}
+
+.loopy {
+    font-family: 'Impact', serif;
+}
+.icon {
+    width: 200px;
+    display: block;
+}
+.icon img {
+    width: 100%;
+}
+.icon:hover {
+    transform: rotate(720deg);
+    animation: 20s seize infinite ease-in;
+}
+
+.fergus {
+    width: 400px;
+}
+@keyframes seize {
+    0% {
+        transform: rotate(0deg);
+    }
+    20% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        transform: rotate(36000deg);
+        filter: hue-rotate(36000deg);
+    }
+}
+
+@media (max-width: 510px) {
+    canvas {
+        display: none;
+    }
+}
