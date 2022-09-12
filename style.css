@@ -14,13 +14,19 @@ canvas {
     background: transparent;
     z-index: -5;
 }
+marquee {
+    overflow: show;
+}
 h1 {
     color: hotpink;
-    animation: seizetwo infinite linear;
+    animation: 10s seizetwo infinite linear;
+}
+h2 {
+    font-family: 'Papyrus', serif;
 }
 @keyframes seizetwo {
     0% {
-        transform: rotateZ(0);
+        transform: rotateX(0);
     }
     20% {
         color: lightgreen;
@@ -41,7 +47,7 @@ h1 {
         color: orange;
     }
     100% {
-        transform: rotateZ(1800deg);
+        transform: rotateX(1800deg);
     }
 }
 .row {
@@ -51,11 +57,34 @@ h1 {
     vertical-align: top;
 }
 
-.dryer {
+.spotify-container {
     display: inline-block;
+}
+.dryer {
+    margin-left: 100px;
+    display: inline-block;
+    height: 200px;
 }
 .dryer img {
     width: 150px;
+    position: relative;
+    top: 0;
+    display: block;
+}
+.dryer .lightning {
+    top: -250px;
+    animation-name: flash;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+@keyframes flash {
+    0% {
+        display: none;
+    }
+    50% {
+        display: block;
+    }
 }
 img {
     width: 100%;

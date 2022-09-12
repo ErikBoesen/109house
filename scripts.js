@@ -1,5 +1,6 @@
 const e = {
     title: document.getElementsByTagName('title')[0],
+    lightning: document.getElementsByClassName('lightning')[0],
 };
 
 function coinFlip() {
@@ -15,4 +16,5 @@ setInterval(function() {
         randomized += coinFlip() ? c.toUpperCase() : c;
     }
     e.title.innerHTML = randomized;
-}, 50);
+    e.lightning.style.display = (e.lightning.style.display == 'block' ? 'none' : 'block');
+}, 100);

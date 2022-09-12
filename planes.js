@@ -75,7 +75,7 @@ function move() {
 }
 function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.strokeStyle = '#000000';
+    ctx.strokeStyle = '#ffffff';
     ctx.lineWidth = 1;
     shownPlanes = planes.slice();
     if (mouseDown && currentPlane != null) {
