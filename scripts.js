@@ -25,7 +25,6 @@ setInterval(function() {
     e.lightning.style.display = (e.lightning.style.display == 'block' ? 'none' : 'block');
 
     let person = people[counter];
-    console.log(person);
     e.peopleImg.src = 'images/people/' + person + '.jpg';
     e.peopleLabel.textContent = person.toUpperCase();
     counter = (counter + 1) % people.length;
