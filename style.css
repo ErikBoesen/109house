@@ -1,7 +1,10 @@
 body {
     margin: 0;
     font-family: 'Comic Sans MS', sans-serif;
-    background: #22aaee;
+    background: radial-gradient(circle at center, red 0, blue, green 100%);
+    min-width: 100%;
+    color: white;
+    cursor: url(images/fergito.png), auto;
 }
 
 canvas {
@@ -11,9 +14,57 @@ canvas {
     background: transparent;
     z-index: -5;
 }
+h1 {
+    color: hotpink;
+    animation: seizetwo infinite linear;
+}
+@keyframes seizetwo {
+    0% {
+        transform: rotateZ(0);
+    }
+    20% {
+        color: lightgreen;
+    }
+    30% {
+        color: indigo;
+    }
+    40% {
+        color: pink;
+    }
+    60% {
+        color: yellow;
+    }
+    80% {
+        color: blue;
+    }
+    90% {
+        color: orange;
+    }
+    100% {
+        transform: rotateZ(1800deg);
+    }
+}
+.row {
+}
+.cell {
+    display: inline-block;
+    vertical-align: top;
+}
 
+.dryer {
+    display: inline-block;
+}
+.dryer img {
+    width: 150px;
+}
+img {
+    width: 100%;
+}
 .loopy {
     font-family: 'Impact', serif;
+}
+.color1 {
+    color: pink;
 }
 .icon {
     width: 200px;
@@ -27,8 +78,23 @@ canvas {
     animation: 20s seize infinite ease-in;
 }
 
+.map {
+    width: 700px;
+    display: block;
+}
+.map:hover {
+    filter: contrast(20);
+}
+
 .fergus {
     width: 400px;
+}
+.fergus img {
+    width: 400px;
+}
+.fergus img:hover {
+    transform: scale(20);
+    transition: 5s ease-in;
 }
 @keyframes seize {
     0% {
