@@ -60,18 +60,18 @@ h2 {
 .spotify-container {
     display: inline-block;
 }
-.dryer {
+#dryer {
     margin-left: 100px;
     display: inline-block;
     height: 200px;
 }
-.dryer img {
+#dryer img {
     width: 150px;
     position: relative;
     top: 0;
     display: block;
 }
-.dryer .lightning {
+#dryer .lightning {
     top: -250px;
     animation-name: flash;
     animation-duration: 3s;

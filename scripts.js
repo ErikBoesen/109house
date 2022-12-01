@@ -1,5 +1,6 @@
 const e = {
     title: document.getElementsByTagName('title')[0],
+    dryer: document.getElementById('dryer'),
     lightning: document.getElementsByClassName('lightning')[0],
     peopleImg: document.getElementById('people_img'),
     peopleLabel: document.getElementById('people_label'),
@@ -30,4 +31,8 @@ setInterval(function() {
     counter = (counter + 1) % people.length;
 }, 150);
 
-
+e.dryer.onclick = function() {
+    document.body.innerHTML = '';
+    document.body.style.background = '#000000';
+    console.log('Died');
+}
