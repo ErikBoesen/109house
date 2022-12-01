@@ -13,7 +13,7 @@ const people = ['laurel', 'leah', 'erik', 'pablo', 'emily', 'josh', 'jay', 'mich
 let counter = 0;
 
 setInterval(function() {
-    let text = 'howe';
+    let text = 'house';
     let randomized = '109';
     randomized = randomized.split('').sort(function(){return 0.5-Math.random()}).join('');
     randomized += ' ';
