@@ -32,7 +32,8 @@ setInterval(function() {
 }, 150);
 
 e.dryer.onclick = function() {
-    document.body.innerHTML = '';
+    document.body.innerHTML = '<h1>YOU DIED</h1>';
     document.body.style.background = '#000000';
+    document.body.style.color = 'white';
     console.log('Died');
 }
